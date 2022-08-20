@@ -1,0 +1,257 @@
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#bla"/>
+    <link rel="icon" type="image/png" href="/img/zzz.png" sizes="16x16">
+    <script src="https://kit.fontawesome.com/78da2b5c9a.js" crossorigin="anonymous"></script>
+    
+    <title>Sleep.in</title>
+    
+
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <header class="container-fluid position-sticky top-0" style="background-color: #4D4896">
+      <ul class="nav nav-pills mb-3 py-3 container" id="pills-tab" role="tablist" >
+        <li class="nav-item text-primary" role="presentation">
+            <a class="nav-link " id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button"
+            role="tab" aria-controls="pills-home" aria-selected="true">
+                Home
+            </a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link active" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"> 
+                Productos
+            </a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">
+                Carrito
+            </a>
+        </li>
+      </ul>
+    </header>
+
+    <div class="alert container position-sticky top-0 alert-primary hide" role="alert">
+        Producto Añadido al carrito!
+    </div>
+    <div class="alert container position-sticky top-0 alert-danger remove" role="alert">
+        Producto removido!
+    </div>
+
+    <div class="tab-content" id="pills-tabContent">
+      <div class="tab-pane fade " id="pills-home" role="tabpanel"aria-labelledby="pills-home-tab">
+        <div class="container-index">
+            <div class="hero">
+              <img src="img/Logo.png" alt="Logo de Sleep.in">
+
+              <div class="description-index">
+                
+                <p><i class="fa-solid fa-circle-check"></i> La mejor calidad en colchones</p>
+                <p><i class="fa-solid fa-circle-check"></i> Atención personalizada</p>
+                <p><i class="fa-solid fa-circle-check"></i> Amplio catálogo</p>
+                <p><i class="fa-solid fa-circle-check"></i> Envíos a domicilio</p>
+
+              </div>
+
+              <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./img/mujer_durmiendo.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/personadurmiendo2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/personadurmiendo3.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+        </div>
+      </div>
+
+      <div
+        class="tab-pane fade show active container"
+        id="pills-profile"
+        role="tabpanel"
+        aria-labelledby="pills-profile-tab"
+      >
+        <h2 class="h4 m-4 text-primary">Productos</h2>
+
+        <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-primary">Colchón Disney Spiderman</h5>
+              <img src="./img/colchon_spiderman_190x080.jpg" class="card-img-top" alt="Colchón Spiderman">
+              <div class="card-body">
+                <p class="card-text description">Medidas: 190x0.80. Tela: Sabana matelasseada. Estructura: Espuma de baja densidad. Altura: 18cm.</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 19.187</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-primary">Colchón Preston</h5>
+              <img src="./img/colchon_preston_190x080.jpg" class="card-img-top" alt="Colchón preston">
+              <div class="card-body">
+                <p class="card-text description">Medidas: 190x0.80. Tela: Sabana matelasseada. Estructura: Resortes Ultra Coil. Altura: 23cm.</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 27.238</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-primary">Colchón Comfort</h5>
+              <img src="./img/colchon_comfort_190x080.jpg" class="card-img-top" alt="Colchón Comfort">
+              <div class="card-body">
+                <p class="card-text description">Medidas: 190x0.80. Tela: Sabana matelasseada. Estructura: Espuma de media densidad. Altura: 23cm.</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 26.529</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-primary">Colchón Merit</h5>
+              <img src="./img/colchon_merit_190x080.jpg" class="card-img-top" alt="Colchón Merit">
+              <div class="card-body">
+                <p class="card-text description">Medidas: 190x0.80. Tela: Jackard matelasseada. Estructura: Espuma de alta densidad. Altura: 24cm.</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 30.687</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-primary">Colchón Merit 190x140</h5>
+              <img src="./img/colchon_merit_190x130.jpg" class="card-img-top" alt="Colchón Merit 190x140">
+              <div class="card-body">
+                <p class="card-text description">Medidas: 190x140. Tela: Jackard matelasseada. Estructura: Espuma de alta densidad. Altura: 24cm.</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 51.096</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-primary">Colchón Splendid</h5>
+              <img src="./img/colchon_splendid_190x080.jpg" class="card-img-top" alt="Colchón Splendid">
+              <div class="card-body">
+                <p class="card-text description">Medidas: 190x0.80. Tela: Jackard matelasseada. Estructura: Espuma de media densidad. Altura: 20cm.</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 26.281</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-primary">Conjunto Splendid</h5>
+              <img src="./img/Conjunto_Splendid.jpg" class="card-img-top" alt="Conjunto Splendid">
+              <div class="card-body">
+                <p class="card-text description">Medidas: 190x0.80. Tela: Jackard matelasseada. Estructura: Espuma de media densidad. Altura: 20cm.</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 43.375</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div
+        class="tab-pane fade carrito"
+        id="pills-contact"
+        role="tabpanel"
+        aria-labelledby="pills-contact-tab"
+      >
+      <br>
+      <table class="table table-hover">
+        <thead>
+          <tr class="text-primary">
+            <th scope="col">#</th>
+            <th scope="col">Productos</th>
+            <th scope="col">Precio</th>
+            <th scope="col">Cantidad</th>
+          </tr>
+        </thead>
+        <tbody class="tbody">
+          
+        </tbody>
+      </table>
+      <br><br>
+      <div class="row mx-4">
+        <div class="col">
+          <h3 class="itemCartTotal text-white">Total: 0</h3>
+        </div>
+        <div class="col d-flex justify-content-end">
+          <button class="btn btn-success">COMPRAR</button>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+
+    <footer class="footer">
+        <img src="../img/Logo_B_recortado.png" alt="Logo de Sleep.In" width="220px">
+        <h3>Seguinos en nuestras redes:</h3>
+
+        <div class="social-media">
+            <a href="https://www.facebook.com/sleepinok" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="https://www.instagram.com/sleepinok" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        
+        <p class="footertext">Sleep.In - Todos los derechos reservados ©</p>
+        <p class="footertext">Córdoba, Argentina</p>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>

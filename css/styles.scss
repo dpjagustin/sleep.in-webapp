@@ -1,0 +1,130 @@
+@font-face {
+  font-family: 'Visby';
+  src: url("../fonts/Demo_Fonts/Fontspring-DEMO-visbycf-bold.otf");
+  src: url(../fonts/Demo_Fonts/Fontspring-DEMO-visbycf-light.otf);
+  src: url(../fonts/Demo_Fonts/Fontspring-DEMO-visbycf-medium.otf);
+}
+
+// Variables 
+
+$colorUno: #4D4896;
+$colorDos: #815FA3;
+$colorTres: #EE786E;
+$colorCuatro: #BEBDBE;
+$colorCinco: #F2F2F2;
+
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    h1 {
+        text-align: center;
+    }
+
+    img {
+        max-width: 100vw;
+    }
+}
+
+.description-index {
+    i {
+        color: greenyellow;
+    }
+
+    margin-bottom: 3rem;
+}
+
+.container-index {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    color: white;
+}
+
+header, .alert{
+    z-index: 100;
+}
+
+.description{
+    height: 25px;
+    overflow: hidden;
+    transition: height .3s ease-in .3s;
+}
+
+.description:hover{
+    height: 80px;
+}
+
+.carrito{
+    min-height: 80vh;
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.table__productos{
+    display: flex;
+}
+
+.table__productos > img{
+    width: 9rem;
+    object-fit: contain;
+    border-radius: 6px;
+    margin-right: 20px;
+}
+
+.table__cantidad > input{
+    width: 40px;
+    border: none;
+    outline: 0;
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+
+.hide, .remove{
+    display: none;
+}
+
+/* Footer */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    // height: 50vh;
+    background-color: #4D4896;
+    padding: 2rem;
+    // justify-content: center;
+    align-items: center;
+
+    h3 {
+        margin-top: 1.3rem;
+        color: $colorTres;
+        font-family: Visby;
+    }
+}
+
+.social-media{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+
+    i {
+        font-size: 2.5rem;
+        margin: 1rem;
+        margin-top: 0.2rem;
+        color: white;
+    }
+}
+
+.footertext {
+    color: $colorCuatro;
+    margin-bottom: 0px;
+}
